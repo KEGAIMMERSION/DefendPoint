@@ -1,0 +1,1 @@
+export {ThreatsTable} from "./ui/ThreatsTable"
