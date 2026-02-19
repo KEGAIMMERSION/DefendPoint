@@ -1,4 +1,4 @@
-import {dashboardStats, trafficData} from "../data"
+import {dashboardStats, trafficData, dashboardCharts} from "../data"
 
 export class DashboardService {
     getStats() {
@@ -7,5 +7,21 @@ export class DashboardService {
 
     getTrafficData() {
         return trafficData
+    }
+
+    getThreatsByType() {
+        return dashboardCharts.threatsByType
+    }
+
+    getHourlyActivity() {
+        return dashboardCharts.hourlyActivity
+    }
+
+    getTopAttackers() {
+        return dashboardCharts.topAttackers
+    }
+
+    getReminders() {
+        return dashboardCharts.reminders
     }
 }
