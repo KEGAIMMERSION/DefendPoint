@@ -188,7 +188,6 @@ export const PoliciesPage: React.FC = () => {
             <div className={styles.statsCards}>
                 <div className={styles.statCard}>
                     <div className={styles.statLabel}>
-                        <span className={styles.icon}>📋</span>
                         Всего политик
                     </div>
                     <div className={styles.statValue}>{stats?.total || 0}</div>
@@ -197,7 +196,6 @@ export const PoliciesPage: React.FC = () => {
 
                 <div className={styles.statCard}>
                     <div className={styles.statLabel}>
-                        <span className={styles.icon}>✅</span>
                         Активных
                     </div>
                     <div className={styles.statValue}>{stats?.active || 0}</div>
@@ -208,7 +206,6 @@ export const PoliciesPage: React.FC = () => {
 
                 <div className={styles.statCard}>
                     <div className={styles.statLabel}>
-                        <span className={styles.icon}>📝</span>
                         Черновиков
                     </div>
                     <div className={styles.statValue}>{stats?.draft || 0}</div>
@@ -217,7 +214,6 @@ export const PoliciesPage: React.FC = () => {
 
                 <div className={styles.statCard}>
                     <div className={styles.statLabel}>
-                        <span className={styles.icon}>🔥</span>
                         Критичных
                     </div>
                     <div className={styles.statValue}>{stats?.byPriority?.critical || 0}</div>
